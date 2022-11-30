@@ -77,7 +77,7 @@ while (current <= num)
     {
         Console.Write(current + " ");
         current++;
-     }
+    }
     else 
     {
         current++;

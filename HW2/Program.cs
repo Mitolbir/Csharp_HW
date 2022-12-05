@@ -59,5 +59,34 @@ else
 {
     Console.WriteLine($"Your third-digit number is {newNum}");
 }
-*/
 
+Напишите программу, которая принимает на вход цифру, 
+обозначающую день недели, и проверяет, 
+является ли этот день выходным.
+
+int DayOfDate(int num)
+{
+    if (num == 6 || num == 7)
+    {
+        num = 1;
+    }
+    else
+    {
+        num = 0;
+    }
+return num;
+}
+
+Console.Write("Input a day of the week ");
+int day = Convert.ToInt32(Console.ReadLine());
+int dayoff = DayOfDate(day);
+
+if (dayoff == 1)
+{
+    Console.WriteLine("Its a dayoff!");
+}
+else
+{
+    Console.WriteLine("Go to work");
+}
+*/
